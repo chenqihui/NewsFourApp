@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		741DEBD019979B4400B86EB1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 741DEBCF19979B4400B86EB1 /* README.md */; };
+		741E2346199711A200280786 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E2343199711A200280786 /* UIImage+ImageEffects.m */; };
+		741E2347199711A200280786 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E2345199711A200280786 /* UIImageView+LBBlurredImage.m */; };
+		741E234A19972E7100280786 /* head1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 741E234819972E7100280786 /* head1.jpg */; };
+		741E234B19972E7100280786 /* head2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 741E234919972E7100280786 /* head2.jpg */; };
+		74273A2B1995CF0D006096D1 /* QHCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 74273A2A1995CF0D006096D1 /* QHCommonUtil.m */; };
+		745CBB4519951B42001D103E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745CBB4419951B42001D103E /* Foundation.framework */; };
+		745CBB4719951B42001D103E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745CBB4619951B42001D103E /* CoreGraphics.framework */; };
+		745CBB4919951B42001D103E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745CBB4819951B42001D103E /* UIKit.framework */; };
+		745CBB4F19951B42001D103E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 745CBB4D19951B42001D103E /* InfoPlist.strings */; };
+		745CBB5119951B42001D103E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB5019951B42001D103E /* main.m */; };
+		745CBB5519951B42001D103E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB5419951B42001D103E /* AppDelegate.m */; };
+		745CBB5719951B42001D103E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745CBB5619951B42001D103E /* Images.xcassets */; };
+		745CBB5E19951B42001D103E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745CBB5D19951B42001D103E /* XCTest.framework */; };
+		745CBB5F19951B42001D103E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745CBB4419951B42001D103E /* Foundation.framework */; };
+		745CBB6019951B42001D103E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745CBB4819951B42001D103E /* UIKit.framework */; };
+		745CBB6819951B42001D103E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 745CBB6619951B42001D103E /* InfoPlist.strings */; };
+		745CBB6A19951B42001D103E /* NewsFourAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB6919951B42001D103E /* NewsFourAppTests.m */; };
+		745CBB7C1995235B001D103E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB751995235B001D103E /* LeftViewController.m */; };
+		745CBB7D1995235B001D103E /* MainAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB771995235B001D103E /* MainAppViewController.m */; };
+		745CBB7E1995235B001D103E /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB791995235B001D103E /* RightViewController.m */; };
+		745CBB7F1995235B001D103E /* TouchPropagatedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB7B1995235B001D103E /* TouchPropagatedScrollView.m */; };
+		745CBB8819952367001D103E /* MLTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB8219952367001D103E /* MLTransitionAnimation.m */; };
+		745CBB8919952367001D103E /* UIViewController+MLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB8419952367001D103E /* UIViewController+MLTransition.m */; };
+		745CBB8A19952367001D103E /* QHSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB8719952367001D103E /* QHSliderViewController.m */; };
+		745CBB8D19952380001D103E /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CBB8C19952380001D103E /* SubViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		745CBB6119951B42001D103E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 745CBB3919951B42001D103E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 745CBB4019951B42001D103E;
+			remoteInfo = NewsFourApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		741DEBCF19979B4400B86EB1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		741E2342199711A200280786 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		741E2343199711A200280786 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		741E2344199711A200280786 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		741E2345199711A200280786 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		741E234819972E7100280786 /* head1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head1.jpg; sourceTree = "<group>"; };
+		741E234919972E7100280786 /* head2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head2.jpg; sourceTree = "<group>"; };
+		74273A291995CF0D006096D1 /* QHCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHCommonUtil.h; sourceTree = "<group>"; };
+		74273A2A1995CF0D006096D1 /* QHCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHCommonUtil.m; sourceTree = "<group>"; };
+		745CBB4119951B42001D103E /* NewsFourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFourApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		745CBB4419951B42001D103E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		745CBB4619951B42001D103E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		745CBB4819951B42001D103E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		745CBB4C19951B42001D103E /* NewsFourApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewsFourApp-Info.plist"; sourceTree = "<group>"; };
+		745CBB4E19951B42001D103E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		745CBB5019951B42001D103E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		745CBB5219951B42001D103E /* NewsFourApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsFourApp-Prefix.pch"; sourceTree = "<group>"; };
+		745CBB5319951B42001D103E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		745CBB5419951B42001D103E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		745CBB5619951B42001D103E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		745CBB5C19951B42001D103E /* NewsFourAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsFourAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		745CBB5D19951B42001D103E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		745CBB6519951B42001D103E /* NewsFourAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewsFourAppTests-Info.plist"; sourceTree = "<group>"; };
+		745CBB6719951B42001D103E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		745CBB6919951B42001D103E /* NewsFourAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFourAppTests.m; sourceTree = "<group>"; };
+		745CBB731995201F001D103E /* QHViewTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHViewTag.h; sourceTree = "<group>"; };
+		745CBB741995235B001D103E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		745CBB751995235B001D103E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		745CBB761995235B001D103E /* MainAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainAppViewController.h; sourceTree = "<group>"; };
+		745CBB771995235B001D103E /* MainAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainAppViewController.m; sourceTree = "<group>"; };
+		745CBB781995235B001D103E /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		745CBB791995235B001D103E /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		745CBB7A1995235B001D103E /* TouchPropagatedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPropagatedScrollView.h; sourceTree = "<group>"; };
+		745CBB7B1995235B001D103E /* TouchPropagatedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchPropagatedScrollView.m; sourceTree = "<group>"; };
+		745CBB8119952367001D103E /* MLTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTransitionAnimation.h; sourceTree = "<group>"; };
+		745CBB8219952367001D103E /* MLTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTransitionAnimation.m; sourceTree = "<group>"; };
+		745CBB8319952367001D103E /* UIViewController+MLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MLTransition.h"; sourceTree = "<group>"; };
+		745CBB8419952367001D103E /* UIViewController+MLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MLTransition.m"; sourceTree = "<group>"; };
+		745CBB8619952367001D103E /* QHSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHSliderViewController.h; sourceTree = "<group>"; };
+		745CBB8719952367001D103E /* QHSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHSliderViewController.m; sourceTree = "<group>"; };
+		745CBB8B19952380001D103E /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		745CBB8C19952380001D103E /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		745CBB3E19951B42001D103E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745CBB4719951B42001D103E /* CoreGraphics.framework in Frameworks */,
+				745CBB4919951B42001D103E /* UIKit.framework in Frameworks */,
+				745CBB4519951B42001D103E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745CBB5919951B42001D103E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745CBB5E19951B42001D103E /* XCTest.framework in Frameworks */,
+				745CBB6019951B42001D103E /* UIKit.framework in Frameworks */,
+				745CBB5F19951B42001D103E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		741E2341199711A200280786 /* LBBlurredImage */ = {
+			isa = PBXGroup;
+			children = (
+				741E2342199711A200280786 /* UIImage+ImageEffects.h */,
+				741E2343199711A200280786 /* UIImage+ImageEffects.m */,
+				741E2344199711A200280786 /* UIImageView+LBBlurredImage.h */,
+				741E2345199711A200280786 /* UIImageView+LBBlurredImage.m */,
+			);
+			path = LBBlurredImage;
+			sourceTree = "<group>";
+		};
+		74273A281995C83B006096D1 /* Uitills */ = {
+			isa = PBXGroup;
+			children = (
+				74273A291995CF0D006096D1 /* QHCommonUtil.h */,
+				74273A2A1995CF0D006096D1 /* QHCommonUtil.m */,
+			);
+			name = Uitills;
+			sourceTree = "<group>";
+		};
+		745CBB3819951B42001D103E = {
+			isa = PBXGroup;
+			children = (
+				745CBB4A19951B42001D103E /* NewsFourApp */,
+				745CBB6319951B42001D103E /* NewsFourAppTests */,
+				745CBB4319951B42001D103E /* Frameworks */,
+				745CBB4219951B42001D103E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		745CBB4219951B42001D103E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				745CBB4119951B42001D103E /* NewsFourApp.app */,
+				745CBB5C19951B42001D103E /* NewsFourAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		745CBB4319951B42001D103E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				745CBB4419951B42001D103E /* Foundation.framework */,
+				745CBB4619951B42001D103E /* CoreGraphics.framework */,
+				745CBB4819951B42001D103E /* UIKit.framework */,
+				745CBB5D19951B42001D103E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		745CBB4A19951B42001D103E /* NewsFourApp */ = {
+			isa = PBXGroup;
+			children = (
+				741E2341199711A200280786 /* LBBlurredImage */,
+				74273A281995C83B006096D1 /* Uitills */,
+				745CBB8E1995239D001D103E /* Views */,
+				745CBB8019952367001D103E /* MLTransition */,
+				745CBB8519952367001D103E /* SliderViewController */,
+				745CBB761995235B001D103E /* MainAppViewController.h */,
+				745CBB771995235B001D103E /* MainAppViewController.m */,
+				745CBB741995235B001D103E /* LeftViewController.h */,
+				745CBB751995235B001D103E /* LeftViewController.m */,
+				745CBB781995235B001D103E /* RightViewController.h */,
+				745CBB791995235B001D103E /* RightViewController.m */,
+				745CBB8B19952380001D103E /* SubViewController.h */,
+				745CBB8C19952380001D103E /* SubViewController.m */,
+				745CBB5619951B42001D103E /* Images.xcassets */,
+				745CBB4B19951B42001D103E /* Supporting Files */,
+			);
+			path = NewsFourApp;
+			sourceTree = "<group>";
+		};
+		745CBB4B19951B42001D103E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				741DEBCF19979B4400B86EB1 /* README.md */,
+				741E234819972E7100280786 /* head1.jpg */,
+				741E234919972E7100280786 /* head2.jpg */,
+				745CBB5319951B42001D103E /* AppDelegate.h */,
+				745CBB5419951B42001D103E /* AppDelegate.m */,
+				745CBB731995201F001D103E /* QHViewTag.h */,
+				745CBB4C19951B42001D103E /* NewsFourApp-Info.plist */,
+				745CBB4D19951B42001D103E /* InfoPlist.strings */,
+				745CBB5019951B42001D103E /* main.m */,
+				745CBB5219951B42001D103E /* NewsFourApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		745CBB6319951B42001D103E /* NewsFourAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				745CBB6919951B42001D103E /* NewsFourAppTests.m */,
+				745CBB6419951B42001D103E /* Supporting Files */,
+			);
+			path = NewsFourAppTests;
+			sourceTree = "<group>";
+		};
+		745CBB6419951B42001D103E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				745CBB6519951B42001D103E /* NewsFourAppTests-Info.plist */,
+				745CBB6619951B42001D103E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		745CBB8019952367001D103E /* MLTransition */ = {
+			isa = PBXGroup;
+			children = (
+				745CBB8119952367001D103E /* MLTransitionAnimation.h */,
+				745CBB8219952367001D103E /* MLTransitionAnimation.m */,
+				745CBB8319952367001D103E /* UIViewController+MLTransition.h */,
+				745CBB8419952367001D103E /* UIViewController+MLTransition.m */,
+			);
+			path = MLTransition;
+			sourceTree = "<group>";
+		};
+		745CBB8519952367001D103E /* SliderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				745CBB8619952367001D103E /* QHSliderViewController.h */,
+				745CBB8719952367001D103E /* QHSliderViewController.m */,
+			);
+			path = SliderViewController;
+			sourceTree = "<group>";
+		};
+		745CBB8E1995239D001D103E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				745CBB7A1995235B001D103E /* TouchPropagatedScrollView.h */,
+				745CBB7B1995235B001D103E /* TouchPropagatedScrollView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		745CBB4019951B42001D103E /* NewsFourApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745CBB6D19951B42001D103E /* Build configuration list for PBXNativeTarget "NewsFourApp" */;
+			buildPhases = (
+				745CBB3D19951B42001D103E /* Sources */,
+				745CBB3E19951B42001D103E /* Frameworks */,
+				745CBB3F19951B42001D103E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewsFourApp;
+			productName = NewsFourApp;
+			productReference = 745CBB4119951B42001D103E /* NewsFourApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		745CBB5B19951B42001D103E /* NewsFourAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745CBB7019951B42001D103E /* Build configuration list for PBXNativeTarget "NewsFourAppTests" */;
+			buildPhases = (
+				745CBB5819951B42001D103E /* Sources */,
+				745CBB5919951B42001D103E /* Frameworks */,
+				745CBB5A19951B42001D103E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				745CBB6219951B42001D103E /* PBXTargetDependency */,
+			);
+			name = NewsFourAppTests;
+			productName = NewsFourAppTests;
+			productReference = 745CBB5C19951B42001D103E /* NewsFourAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		745CBB3919951B42001D103E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = chen;
+				TargetAttributes = {
+					745CBB5B19951B42001D103E = {
+						TestTargetID = 745CBB4019951B42001D103E;
+					};
+				};
+			};
+			buildConfigurationList = 745CBB3C19951B42001D103E /* Build configuration list for PBXProject "NewsFourApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 745CBB3819951B42001D103E;
+			productRefGroup = 745CBB4219951B42001D103E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				745CBB4019951B42001D103E /* NewsFourApp */,
+				745CBB5B19951B42001D103E /* NewsFourAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		745CBB3F19951B42001D103E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741E234B19972E7100280786 /* head2.jpg in Resources */,
+				745CBB4F19951B42001D103E /* InfoPlist.strings in Resources */,
+				741DEBD019979B4400B86EB1 /* README.md in Resources */,
+				741E234A19972E7100280786 /* head1.jpg in Resources */,
+				745CBB5719951B42001D103E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745CBB5A19951B42001D103E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745CBB6819951B42001D103E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		745CBB3D19951B42001D103E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745CBB8819952367001D103E /* MLTransitionAnimation.m in Sources */,
+				741E2346199711A200280786 /* UIImage+ImageEffects.m in Sources */,
+				74273A2B1995CF0D006096D1 /* QHCommonUtil.m in Sources */,
+				745CBB7E1995235B001D103E /* RightViewController.m in Sources */,
+				745CBB7C1995235B001D103E /* LeftViewController.m in Sources */,
+				745CBB5519951B42001D103E /* AppDelegate.m in Sources */,
+				745CBB5119951B42001D103E /* main.m in Sources */,
+				745CBB8D19952380001D103E /* SubViewController.m in Sources */,
+				745CBB7F1995235B001D103E /* TouchPropagatedScrollView.m in Sources */,
+				745CBB8919952367001D103E /* UIViewController+MLTransition.m in Sources */,
+				741E2347199711A200280786 /* UIImageView+LBBlurredImage.m in Sources */,
+				745CBB8A19952367001D103E /* QHSliderViewController.m in Sources */,
+				745CBB7D1995235B001D103E /* MainAppViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745CBB5819951B42001D103E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745CBB6A19951B42001D103E /* NewsFourAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		745CBB6219951B42001D103E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 745CBB4019951B42001D103E /* NewsFourApp */;
+			targetProxy = 745CBB6119951B42001D103E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		745CBB4D19951B42001D103E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				745CBB4E19951B42001D103E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		745CBB6619951B42001D103E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				745CBB6719951B42001D103E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		745CBB6B19951B42001D103E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		745CBB6C19951B42001D103E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		745CBB6E19951B42001D103E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewsFourApp/NewsFourApp-Prefix.pch";
+				INFOPLIST_FILE = "NewsFourApp/NewsFourApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		745CBB6F19951B42001D103E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewsFourApp/NewsFourApp-Prefix.pch";
+				INFOPLIST_FILE = "NewsFourApp/NewsFourApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		745CBB7119951B42001D103E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NewsFourApp.app/NewsFourApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewsFourApp/NewsFourApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NewsFourAppTests/NewsFourAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		745CBB7219951B42001D103E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NewsFourApp.app/NewsFourApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewsFourApp/NewsFourApp-Prefix.pch";
+				INFOPLIST_FILE = "NewsFourAppTests/NewsFourAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		745CBB3C19951B42001D103E /* Build configuration list for PBXProject "NewsFourApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745CBB6B19951B42001D103E /* Debug */,
+				745CBB6C19951B42001D103E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		745CBB6D19951B42001D103E /* Build configuration list for PBXNativeTarget "NewsFourApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745CBB6E19951B42001D103E /* Debug */,
+				745CBB6F19951B42001D103E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		745CBB7019951B42001D103E /* Build configuration list for PBXNativeTarget "NewsFourAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745CBB7119951B42001D103E /* Debug */,
+				745CBB7219951B42001D103E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 745CBB3919951B42001D103E /* Project object */;
+}
