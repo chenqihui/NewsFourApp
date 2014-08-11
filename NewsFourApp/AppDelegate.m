@@ -25,7 +25,12 @@
     LeftViewController *leftVC = [[LeftViewController alloc] init];
     [leftVC.view setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width*0.75, [UIScreen mainScreen].bounds.size.height)];
     [QHSliderViewController sharedSliderController].LeftVC = leftVC;
-    [QHSliderViewController sharedSliderController].RightVC = [[RightViewController alloc] init];
+    RightViewController *rightVC = [[RightViewController alloc] init];
+    [QHSliderViewController sharedSliderController].RightVC = rightVC;
+    [QHSliderViewController sharedSliderController].finishShowRight = ^()
+    {
+        [rightVC headPhotoAnimation];
+    };
     [QHSliderViewController sharedSliderController].MainVC = [[MainAppViewController alloc] init];
     
     UINavigationController *naviC = [[UINavigationController alloc] initWithRootViewController:[QHSliderViewController sharedSliderController]];

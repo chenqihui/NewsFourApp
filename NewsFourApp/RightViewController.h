@@ -13,4 +13,6 @@
 //可以旋转的UIImage
 @property (nonatomic,retain) UIImageView *headImageView;
 
+- (void)headPhotoAnimation;
+
 @end

@@ -19,6 +19,8 @@
 @property(nonatomic,assign)BOOL canShowLeft;
 @property(nonatomic,assign)BOOL canShowRight;
 
+@property (nonatomic, copy) void(^finishShowRight)();
+
 + (QHSliderViewController*)sharedSliderController;
 
 //- (void)showContentControllerWithModel:(NSString*)className;

@@ -248,6 +248,11 @@
      {
          _rightSideView.userInteractionEnabled = YES;
          _tapGestureRec.enabled = YES;
+         
+         if (self.finishShowRight != nil)
+         {
+             self.finishShowRight();
+         }
      }];
 }
 
@@ -442,6 +447,11 @@
                  {
                      _rightSideView.userInteractionEnabled = YES;
                      _tapGestureRec.enabled = YES;
+                     
+                     if (self.finishShowRight != nil)
+                     {
+                         self.finishShowRight();
+                     }
                  }];
             }else
             {
