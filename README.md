@@ -5,6 +5,8 @@ NewsFourApp
 
 声明：如果有好的修改，非常欢迎fork提交分享哈
 
+![image](https://github.com/chenqihui/NewsFourApp/blob/master/screenshots/NewsFourAppGif.gif)
+
 ---------------------------华丽丽的分割线------------------------------
 
 beta 0.2
