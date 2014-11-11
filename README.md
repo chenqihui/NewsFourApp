@@ -4,9 +4,10 @@ NewsFourApp
 高仿网易4.0新UI框架的Demo
 
 声明：如果有好的修改，非常欢迎fork提交分享哈
-注意：（建议将MLTransition换[MLBlackTransition](https://github.com/molon/MLTransition)，因为此修复bug
 
-如：使用UIImagePickerController获取图片）
+注意：（建议将MLTransition换[MLBlackTransition](https://github.com/molon/MLTransition)，
+
+因为此修复bug，如：使用UIImagePickerController获取图片）
 
 ![image](https://github.com/chenqihui/NewsFourApp/blob/master/screenshots/NewsFourAppGif.gif)
 
