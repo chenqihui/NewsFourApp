@@ -115,7 +115,7 @@
 {
     [super viewDidLoad];
     
-    self.navigationController.navigationBarHidden=YES;
+//    self.navigationController.navigationBarHidden=YES;
 
     _controllersDict = [[NSMutableDictionary alloc] init];
     
@@ -219,7 +219,8 @@
     [UIView animateWithDuration:COMMON_DURATION_TIME animations:^
      {
          [self configureViewBlurWith:_MainVC.view.frame.size.width scale:0.8];
-         [_leftSideView setFrame:CGRectMake(-_nDurationLeft, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+//         [_leftSideView setFrame:CGRectMake(-_nDurationLeft, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+         _leftSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, _leftSideView.bounds.size.width - _nDurationLeft, 0);
      } completion:^(BOOL finished)
      {
          _leftSideView.userInteractionEnabled = YES;
@@ -243,7 +244,8 @@
     [UIView animateWithDuration:COMMON_DURATION_TIME animations:^
      {
          [self configureViewBlurWith:_MainVC.view.frame.size.width scale:1];
-         [_rightSideView setFrame:CGRectMake(0, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+//         [_rightSideView setFrame:CGRectMake(0, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+         _rightSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, -_rightSideView.bounds.size.width, 0);
      } completion:^(BOOL finished)
      {
          _rightSideView.userInteractionEnabled = YES;
@@ -258,7 +260,7 @@
 
 - (void)closeSideBar
 {
-    [self closeSideBarWithAnimate:YES complete:^(BOOL finished) {}];
+    [self closeSideBarWithAnimate:YES complete:nil];
 }
 
 - (void)closeSideBarWithAnimate:(BOOL)bAnimate complete:(void(^)(BOOL finished))complete
@@ -271,7 +273,8 @@
             [UIView animateWithDuration:COMMON_DURATION_TIME animations:^
              {
                  [self configureViewBlurWith:0 scale:0.8];
-                 [_leftSideView setFrame:CGRectMake(-_leftSideView.frame.size.width, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+//                 [_leftSideView setFrame:CGRectMake(-_leftSideView.frame.size.width, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+                 _leftSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, 0);
              } completion:^(BOOL finished)
              {
                  [self.view sendSubviewToBack:_leftSideView];
@@ -280,13 +283,15 @@
                  _tapGestureRec.enabled = NO;
                  
                  [self removeconfigureViewBlur];
-                 
-                 complete(YES);
+                 if (complete) {
+                     complete(YES);
+                 }
              }];
         }else
         {
             [self configureViewBlurWith:0 scale:0.8];
-            [_leftSideView setFrame:CGRectMake(-_leftSideView.frame.size.width, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+//            [_leftSideView setFrame:CGRectMake(-_leftSideView.frame.size.width, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+            _leftSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, 0);
             [self.view sendSubviewToBack:_leftSideView];
             showingLeft = NO;
             showingRight = NO;
@@ -294,7 +299,9 @@
             
             [self removeconfigureViewBlur];
             
-            complete(YES);
+            if (complete) {
+                complete(YES);
+            }
         }
     }else
     {
@@ -304,7 +311,8 @@
             [UIView animateWithDuration:COMMON_DURATION_TIME animations:^
              {
                  [self configureViewBlurWith:0 scale:1];
-                 [_rightSideView setFrame:CGRectMake(_MainVC.view.frame.size.width, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+//                 [_rightSideView setFrame:CGRectMake(_MainVC.view.frame.size.width, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+                 _rightSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, 0);
              } completion:^(BOOL finished)
              {
                  [self.view sendSubviewToBack:_rightSideView];
@@ -314,12 +322,15 @@
                  
                  [self removeconfigureViewBlur];
                  
-                 complete(YES);
+                 if (complete) {
+                     complete(YES);
+                 }
              }];
         }else
         {
             [self configureViewBlurWith:0 scale:1];
-            [_rightSideView setFrame:CGRectMake(_MainVC.view.frame.size.width, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+//            [_rightSideView setFrame:CGRectMake(_MainVC.view.frame.size.width, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+            _rightSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, 0);
             [self.view sendSubviewToBack:_rightSideView];
             showingLeft = NO;
             showingRight = NO;
@@ -327,7 +338,9 @@
             
             [self removeconfigureViewBlur];
             
-            complete(YES);
+            if (complete) {
+                complete(YES);
+            }
         }
     }
 }
@@ -337,6 +350,7 @@
     static CGFloat startX;
     static CGFloat lastX;
     static CGFloat durationX;
+    static CGFloat offsetX;
     CGPoint touchPoint = [panGes locationInView:[[UIApplication sharedApplication] keyWindow]];
     
     if (panGes.state == UIGestureRecognizerStateBegan)
@@ -349,6 +363,7 @@
         CGFloat currentX = touchPoint.x;
         durationX = currentX - lastX;
         lastX = currentX;
+        offsetX = currentX - startX;
         if (durationX > 0)
         {
             if(!showingLeft && !showingRight)
@@ -376,8 +391,13 @@
             }
             
             [self configureViewBlurWith:currentX scale:0.8];
-            float x = durationX + _leftSideView.frame.origin.x;
-            [_leftSideView setFrame:CGRectMake(x, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+            if (offsetX > 0) {
+                if (offsetX < _leftSideView.bounds.size.width * 0.75) {
+                    _leftSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, offsetX, 0);
+                }
+            }else{
+                _leftSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 240 +offsetX, 0);
+            }
         }
         else    //transX < 0
         {
@@ -386,8 +406,12 @@
             }
             
             [self configureViewBlurWith:(self.view.frame.size.width - currentX) scale:0.8];
-            float x = durationX + _rightSideView.frame.origin.x;
-            [_rightSideView setFrame:CGRectMake(x, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+            //_rightSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, offsetX, 0);
+            if (offsetX > 0) {
+                _rightSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, -_rightSideView.bounds.size.width + offsetX, 0);
+            }else{
+                _rightSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, offsetX, 0);
+            }
         }
     }
     else if (panGes.state == UIGestureRecognizerStateEnded)
@@ -404,7 +428,8 @@
                 [UIView animateWithDuration:durationTime animations:^
                  {
                     [self configureViewBlurWith:_MainVC.view.frame.size.width scale:0.8];
-                    [_leftSideView setFrame:CGRectMake(-_nDurationLeft, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+                    //[_leftSideView setFrame:CGRectMake(-_nDurationLeft, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+                     _leftSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 240, 0);
                 } completion:^(BOOL finished)
                 {
                     _leftSideView.userInteractionEnabled = YES;
@@ -416,7 +441,8 @@
                 [UIView animateWithDuration:durationTime animations:^
                  {
                      [self configureViewBlurWith:0 scale:0.8];
-                     [_leftSideView setFrame:CGRectMake(-_leftSideView.frame.size.width, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+//                     [_leftSideView setFrame:CGRectMake(-_leftSideView.frame.size.width, _leftSideView.frame.origin.y, _leftSideView.frame.size.width, _leftSideView.frame.size.height)];
+                     _leftSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, 0);
                  } completion:^(BOOL finished)
                  {
                      [self.view sendSubviewToBack:_leftSideView];
@@ -442,7 +468,8 @@
                 [UIView animateWithDuration:durationTime animations:^
                  {
                      [self configureViewBlurWith:_MainVC.view.frame.size.width scale:1];
-                     [_rightSideView setFrame:CGRectMake(0, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+//                     [_rightSideView setFrame:CGRectMake(0, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+                     _rightSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, -_rightSideView.bounds.size.width, 0);
                  } completion:^(BOOL finished)
                  {
                      _rightSideView.userInteractionEnabled = YES;
@@ -459,7 +486,8 @@
                 [UIView animateWithDuration:durationTime animations:^
                  {
                      [self configureViewBlurWith:0 scale:1];
-                     [_rightSideView setFrame:CGRectMake(_MainVC.view.frame.size.width, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+//                     [_rightSideView setFrame:CGRectMake(_MainVC.view.frame.size.width, _rightSideView.frame.origin.y, _rightSideView.frame.size.width, _rightSideView.frame.size.height)];
+                     _rightSideView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, 0);
                  } completion:^(BOOL finished)
                  {
                      [self.view sendSubviewToBack:_rightSideView];
@@ -488,8 +516,7 @@
         UIImage *image = [QHCommonUtil getImageFromView:_MainVC.view];
         [_mainBackgroundIV setImageToBlur:image
                                blurRadius:kLBBlurredImageDefaultBlurRadius
-                          completionBlock:^(){}];
-        
+                          completionBlock:nil];
         [_MainVC.view addSubview:_mainBackgroundIV];
     }
     [_mainBackgroundIV setAlpha:(nValue/_MainVC.view.frame.size.width) * nScale];
